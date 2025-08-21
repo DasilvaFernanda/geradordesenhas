@@ -1,0 +1,135 @@
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./assets/background.png") center / cover no-repeat fixed;
+  z-index: -2;
+}
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,.35));
+  z-index: -1;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+
+main.panel {
+  width: min(500px, 92vw);
+  min-height: 520px;
+  margin: 6vh auto;
+  padding: 28px;
+  border-radius: 24px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.glass {
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  letter-spacing: .5px;
+}
+
+
+.password-box {
+  user-select: all;
+  cursor: pointer;
+  margin: 16px auto 10px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.25);
+  font-size: 22px;
+  letter-spacing: 1.1px;
+  word-break: break-all;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.controls {
+  margin-top: 14px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 12px 0 18px;
+}
+
+label { font-weight: 600; }
+
+input[type="range"] { width: 220px; }
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform .12s ease, opacity .12s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.btn.bordo {
+  background: #7a1f3d;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(122,31,61,.45);
+}
+.btn.bordo:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.btn.bordo:active { transform: translateY(0); }
+
+.btn.ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.8);
+}
+.btn.ghost:hover { background: rgba(255,255,255,.1); }
+
+footer {
+  opacity: .85;
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Aqui eu add uma animação de pisca pisca */
+@keyframes blink {
+  0%, 100% { background: rgba(0,0,0,.25); }
+  50% { background: rgba(122,31,61,.7); } 
+}
+.password-box.blink {
+  animation: blink 0.6s ease-in-out 2; 
+}

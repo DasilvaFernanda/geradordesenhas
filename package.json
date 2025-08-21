@@ -1,0 +1,47 @@
+{
+  "name": "gerador-de-senhas-electron",
+  "version": "1.0.0",
+  "description": "Gerador de Senhas com fundo personalizado, botão bordô e caixa transparente.",
+  "author": "Você",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron . --watch",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -w"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.seuapp.geradordesenhas",
+    "productName": "Gerador de Senhas",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "renderer.js",
+      "main.js",
+      "preload.js",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/",
+        "to": "assets/",
+        "filter": ["**/*"]
+      }
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

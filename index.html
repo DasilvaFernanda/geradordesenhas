@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerador de Senhas🔐</title>
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <main class="panel glass">
+    <h1>Gerador de Senhas</h1>
+
+    <div class="password-box" id="pwdBox" title="Clique para copiar">
+      <span id="password">Clique em Gerar</span>
+    </div>
+
+    <div class="controls">
+      <label class="row">
+        Tamanho: <strong id="lenOut">16</strong>
+        <input id="length" type="range" min="6" max="64" value="16" />
+      </label>
+
+      <div class="grid">
+        <label><input id="lower" type="checkbox" checked /> a–z</label>
+        <label><input id="upper" type="checkbox" checked /> A–Z</label>
+        <label><input id="nums"  type="checkbox" checked /> 0–9</label>
+        <label><input id="syms"  type="checkbox" checked /> !@#$%</label>
+      </div>
+
+      <div class="row">
+        <button id="genBtn" class="btn bordo">Gerar senha</button>
+        <button id="copyBtn" class="btn ghost">Copiar</button>
+      </div>
+    </div>
+
+    <footer>Criado por Fernanda Duarte</footer>
+  </main>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
