@@ -4,7 +4,6 @@ App que criei para gerar senhas seguras de forma rápida e prática, sem precisa
 Ele foi feito com Electron, HTML, CSS e JavaScript, e tem uma interface simples, mas com um visual moderno usei efeito Fumê e Google Fonts Roboto.
 
 Como funciona?
-
 ![Demonstração do App](assets/demo.gif)
 
 Se preferir, também dá pra ver o vídeo completo aqui: [clique para assistir](assets/demo.webm).
