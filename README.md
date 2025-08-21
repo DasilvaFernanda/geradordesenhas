@@ -1,4 +1,4 @@
-Bem vindo ao Gerador de senhas <3
+Bem vindo ao Gerador de senhas 🖤
 
 App que criei para gerar senhas seguras de forma rápida e prática, sem precisar ficar acessando sites de terceiros
 Ele foi feito com Electron, HTML, CSS e JavaScript, e tem uma interface simples, mas com um visual moderno usei efeito Fumê e Google Fonts Roboto.
