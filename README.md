@@ -3,7 +3,7 @@ Bem vindo ao Gerador de senhas 🖤
 App que criei para gerar senhas seguras de forma rápida e prática, sem precisar ficar acessando sites de terceiros
 Ele foi feito com Electron, HTML, CSS e JavaScript, e tem uma interface simples, mas com um visual moderno usei efeito Fumê e Google Fonts Roboto.
 
-o que você pode fazer com ele?
+💻 o que você pode fazer com ele?
 
 - Definir o tamanho da senha (de 6 a 64 caracteres)  
 - Incluir letras maiúsculas, minúsculas, números e símbolos  
