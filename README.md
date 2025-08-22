@@ -11,12 +11,12 @@ Ele foi feito com Electron, HTML, CSS e JavaScript, e tem uma interface simples,
 - Ver um feedback visual (a caixa pisca quando a senha é copiada)  
 
 
-🛠️ Tecnologias
+Tecnologias
 - Electron  
 - HTML + CSS (Glassmorphism e Google Fonts)  
 - JavaScript (Clipboard API)  
 
- 🚀 Como rodar?
+Como rodar?
 Clone o repositório e instale as dependências:
 
 ```bash
