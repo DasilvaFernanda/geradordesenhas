@@ -18,7 +18,7 @@ Tecnologias
 - HTML + CSS (Glassmorphism e Google Fonts)  
 - JavaScript (Clipboard API)  
 
-Como rodar?
+
 Como rodar?
 Clone o repositório e instale as dependências:
 
