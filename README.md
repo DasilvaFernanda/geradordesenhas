@@ -13,8 +13,6 @@ Preview
 - Copiar a senha com um clique (ou clicando direto na caixa)  
 - Ver um feedback visual (a caixa pisca quando a senha é copiada)  
 
- Tecnologias
-
 Tecnologias
 - Electron  
 - HTML + CSS (Glassmorphism e Google Fonts)  
